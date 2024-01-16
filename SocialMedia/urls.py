@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-
+import SocialApp
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include('SocialApp.urls'))
+    path('SocialApp/',include('SocialApp.urls')),
 ]
